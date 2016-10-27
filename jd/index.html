@@ -1,0 +1,3225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+body,div,ul,li,span,h2,h3,h4,h5,a,strong,p,img{ margin:0; padding:0; list-style:none; text-decoration:none;}
+img{ border:none;}
+.clear{ clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+/* 去除默认样式*/
+
+#nav{ width:100%; min-width:1342px; background:#f1f1f1; }
+#send{ height:32px; line-height:32px;  font-size:11px; margin-left:70px; padding:0 25px 0 9px; display:inline-block; color:#666;position:relative;}
+#nav #nav_2 { float:right; margin-right:64px;}
+#nav #nav_2 li{ float:left; font-size:11px; line-height:32px; padding-right:6px; color:#666; display:inline-block; padding-left:11px; padding-right:11px; background:url(img/nav_ico.png) no-repeat 0 9px; }
+#nav #nav_2 li a{ text-decoration:none; color:#666;}
+#nav #nav_2 .login{ padding:0px; background:none; }
+#nav #nav_2 .active{ padding-left:7px; padding-right:13px; background:none;}
+#nav #nav_2 .active a{color:#c81623;}
+#nav #nav_2 li .js1{ padding-right:13px;}
+
+#ad1{ margin:0 auto;  width:100%; min-width:1210px;}
+
+#wrapper{ width:1210px; margin:0 auto; }
+#search{}
+#search .logo{ padding:28px 94px 28px 0; float:left; }
+#search .sear{ float:left; margin:24px 0 20px 0;}
+#search .sear1{ width:454px; height:30px; border:2px solid #b61d1d; color:#666;}
+#search .btn{ width:82px; height:36px; background:#b61d1d; color:#fff; border:none;}
+#search .sear ul{ float:left; margin-top:8px;}
+#search .sear li{ float:left; font-size:12px; padding-right:10px;}
+#search .sear li .red{ color:#c81623;}
+#search .sear a{ text-decoration:none; color:#666; }
+#search .cart{ width:94px; height:34px; border:#666 solid 1px; background:#f9f9f9 url(img/cart_ico1.png) no-repeat 20px 10px;font-size:12px; float:right; margin:24px 66px 40px auto; line-height:34px; padding-left:44px; position:relative;}
+#numb{ position:absolute; top:-4px; width:16px; height:14px; background:url(img/cart_ico1.png) no-repeat 0 -27px;}
+
+
+#nav1{ border-bottom:#b1191a solid 2px;  width:1342px;}
+#nav1 .bar{}
+#nav1 .bar strong{ display:block; width:200px; height:44px; background:#b1191a; line-height:44px; color:#f8eaea;padding-left:10px; float:left;  }
+#nav1 .bar ul{ float:left; }
+#nav1 .bar li{ margin:0px; padding:0 40px 0 0; display:inline-block; line-height:44px; font-size:16px; font-weight:bold;}
+#nav1 .bar .pad1{ padding-left:20px;}
+#nav1 .bar li a{ text-decoration:none; color:#666;}
+
+#content1{ width:1210px; position:relative;}
+#nav2{ float:left;}
+#nav2 .fr{ display:block; float:right; padding-right:11px;}
+#nav2 #nav2_1{ width:210px;}
+#nav2 #nav2_1 li{ display:inline-block; width:200px; height:31px; background:#c81623;  font-family:"黑体"; color:#fff; line-height:31px; padding-left:10px; font-size:14px;}
+
+#wrap1{ float:right;margin-top:12px;}
+
+#banner{ float:left; width:730px; height:454px;  position:relative;}
+#banner img{}
+
+#side{width:250px; float:right; margin-left:10px;}
+#news{ width:248px; height:162px; float:right; border:#e4e4e4 solid 1px; }
+#news_head{ width:248px; height:32px;}
+#news_head h2{  display:inline-block; font-size:16px; color:#666; margin-left:14px; line-height:32px; }
+#news .more{ display:inline-block;  font-size:11px; color:#666; margin-right:14px; margin-left:100px; line-height:32px;}
+#news ul{ border-top:dotted 1px #e4e4e4;}
+#news li{ width:248px; height:26px; line-height:26px; margin-left:15px;}
+#news li a{ text-decoration:none; font-size:11px; color:#666;}
+
+#option1{ float:right;}
+#option1 ul	{ float:right; border-left:#e8e8e7 solid 1px; border-bottom:#e8e8e7 solid 1px; position:relative; overflow:hidden;}
+#option1 li{ float:left; width:61px; height:70px; border-right:#e8e8e7 solid 1px;}
+#option1 .phone{ background:url(img/option1_ico.png) no-repeat 21px 13px;}
+#option1 .plane{ background:url(img/option1_ico.png) no-repeat 19px -42px;}
+#option1 .movie{ background:url(img/option1_ico.png) no-repeat 18px -98px;}
+#option1 .game{ background:url(img/option1_ico.png) no-repeat 18px -152px;}
+#option1 .lucky{ background:url(img/option1_ico.png) no-repeat 19px -207px;}
+#option1 .oil{ background:url(img/option1_ico.png) no-repeat 19px -262px;}
+#option1 .hotel{ background:url(img/option1_ico.png) no-repeat 19px -320px;}
+#option1 .hotel img{ position:absolute;top:-660px; left:173px;}
+#option1 .train{ background:url(img/option1_ico.png) no-repeat 22px -376px;}
+#option1 .money{ background:url(img/option1_ico.png) no-repeat 19px -426px;}
+#option1 .fina{ background:url(img/option1_ico.png) no-repeat 18px -480px;}
+#option1 .gif{ background:url(img/option1_ico.png) no-repeat 19px -534px;}
+#option1 .borrow{ background:url(img/option1_ico.png) no-repeat 23px -585px;}
+#option1 a{ text-decoration:none; color:#666; font-size:11px; position:absolute; top:49px; }
+#option1 .phone a{ left:19px;}
+#option1 .plane a{ left:82px;}
+#option1 .movie a{ left:139px;}
+#option1 .game a{ left:208px;}
+#option1 .lucky a{left:19px;}
+#option1 .oil a{ left:76px;}
+#option1 .hotel a{ left:145px;}
+#option1 .train a{ left:202px;}
+#option1 .money a{left:19px;}
+#option1 .fina a{left:82px;}
+#option1 .gif a{left:139px;}
+#option1 .borrow a{ left:209px;} 
+
+.ad2{ margin-top:2px; width:250px; height:75px; float:right;}
+.ad3{ width:1210px;margin:10px auto 39px auto; position:relative;}
+
+.like{ width:1210px; margin-bottom:28px;}
+.cont_head{}
+.like h3{ float:left; font-size:20px; color:#333; padding-right:200px; background:url(img/like.jpg) no-repeat 85px;}
+.like h4{ float:right; font-size:12px; color:#666; background:url(img/like_ico1.png) no-repeat 50px; padding-right:30px; padding-top:5px; height:17px;}
+.like ul{ float:left; border:#ededed solid 1px; border-top:#d1d1d1 solid 1px; margin-top:10px;}
+.like li{ float:left; width:130px; padding:20px 36px 14px 34px; background:url(img/like_ico.png) no-repeat 0 140px;}
+.like .none{ background:none;}
+.like a{ font-size:12px; line-height:16px; }
+.like p{ width:130px; height:30px; overflow:hidden; color:#666;}
+.price{ width:130px; color:#b51d1a; font-size:15px;}
+
+#live{color:#333; }
+#live div{}
+#live h2{ font-size:20px; margin-bottom:9px;}
+#live .live_3 h3{ font-size:14px; height:40px; display:inline-block; line-height:40px;}
+#live .live_2 h3{ font-size:14px; height:40px;  display:inline-block; line-height:40px;}
+#live h4{ font-size:16px;  text-align:left;  position:absolute; top:48px; left:10px;}
+#live p{  font-size:11px; text-align:left;  position:absolute; top:80px; left:10px;}
+#live .red{ color:#c81623; font-size:11px;}
+
+#shop{ float:left;  text-align:center; border:#ededed 1px solid; }
+#live .live_3{ width:404px; background:#f7f7f7; float:left; }
+#live .live_3_top{ height:205px; position:relative; border-top: dotted 1px #e0e0e0; border-bottom:#ededed 1px solid;}
+#live .live_3_top h4{ position:absolute; top:70px; left:56px;}
+#live .live_3_top p{ position:absolute; top:100px; left:56px;}
+#live .live_3_left{ height:158px; width:201px; float:left; position:relative; border-right:#ededed 1px solid;}
+#live .live_3_right{ height:158px; width:201px; float:right;  position:relative;}
+
+#live .live_2{ width:229px;  float:left; border-left:#ededed 1px solid; border-right:#ededed 1px solid;}
+#live .live_2_top{ height:205px;  position:relative;  border-top: dotted 1px #e0e0e0; border-bottom:#ededed 1px solid;}
+#live .live_2_top h4{ position:absolute;top:70px;left:10px;}
+#live .live_2_top p{ position:absolute;top:100px; left:10px;}
+#live .live_2_bottom{ height:158px;position:relative;}
+
+#bg1_top{ background:url(img/57ec74a8Nc25c3253.jpg) no-repeat ;}
+#bg1_left{ background:url(img/57e9c527N60327302.jpg) no-repeat;}
+#bg1_right{ background:url(img/57ea4789Nf29d5c30.jpg) no-repeat;}
+#bg2_top{ background:url(img/57eb942dN53b50864.jpg) no-repeat;}
+#bg2_bottom{ background:url(img/57d652cfNfa9511bf.jpg) no-repeat;}
+#bg3_top{ background:url(img/57baca5bN5e6dd4f7.jpg) no-repeat;}
+#bg3_left{ background:url(img/57ec6c53N76cfcca0.png) no-repeat;}
+#bg3_right{ background:url(img/57a1d492N1ade7836.jpg) no-repeat;}
+
+#logo{ float:right;}
+#logo .fl{ padding-left:8px; border-right:none; }
+#logo .fr{ padding-right:8px; border-left:none;}
+#logo ul{ border:#ededed 1px solid; }
+#logo li{ width:74px; height:57px; }
+#logo .fl li{ border-bottom:#ededed 1px dotted; border-right:#ededed 1px dotted; }
+#logo .fr li{ border-bottom:#ededed 1px dotted;}
+#live #logo .no_border_bottom{ border-bottom:none;}
+
+#ad4 img{margin-top:20px; float:left;}
+
+#first_F{}
+#first_F h2{font-size:20px; float:left;}
+.first_F_nav{ float:right; border:#ededed 1px solid; border-bottom:none;}
+.first_F_nav li{ font-size:12px; float:left; margin:10px 0px; padding:0px 17px; color:#666; border-left:#ccc 1px solid;}
+.first_F_nav .nav_active{padding:7px 17px 10px 17px; margin:0px; border:1px solid #c81623; border-top:3px solid #c81623; border-bottom:none;}
+#first_F .first_F_wrap{border-top:1px solid #c81623;}
+#first_F .first_F_left{width:330px; float:left}
+#first_F  .first_F_mid{ width:439px; float:left;}
+#first_F  .first_F_mid a{ float:left;}
+#first_F .first_F_right{ width:438px; float:right;}
+#first_F .first_F_right ul{ float:left;}
+.first_F_ad { background:#f7f7f7; margin-bottom:22px;}
+.first_F_ad li{ float:left; padding:0 10px; margin: 13px 0; border-right:1px dotted #ccc;}
+
+#second_F h2{ float:left; font-size:20px;}
+.second_F_wrap{border-top:1px solid #c81623;}
+.second_F_left{ float:left; width:210px;}
+.second_F_mid{ float:left; width:339px; position:relative;}
+.second_F_right{ float:right; width:657px;}
+.second_F_right ul{ float:left; width:219px;}
+
+
+#footer{  width:100%; min-width:1342px; height:94px; background:#f1f1f1; text-align:center;}
+#foot1{}
+#foot1 li{ float:left; line-height:94px; font-size:20px; font-weight:bolder; color:#666;}
+#duo{ background:url(img/foot_ico1.png) no-repeat 85px 25px;; padding-left:132px; }
+#kuai{background:url(img/foot_ico1.png) no-repeat 88px -44px; padding-left:136px;}
+#hao{background:url(img/foot_ico1.png) no-repeat 92px -114px;padding-left:140px;}
+#sheng{background:url(img/foot_ico1.png) no-repeat 92px -182px; padding-left:140px;}
+
+#nav_last{ display:inline-block;border-bottom:solid #e5e5e5 1px; margin-top:24px; text-align:left;}
+#nav_last li{ float:left; color:#666; width:200px;}
+#nav_last h3{ font-size:16px;}
+#nav_last li a{ color:#666; font-size:13px;}
+#shopping_guide{}
+#shopping_guide li{ float:none;}
+#sendway li{ float:none;}
+#payway li{ float:none;}
+#aftershop li{ float:none;}
+#fuwu li{ float:none;}
+#map{ background:url(img/foot_map.png) no-repeat; width:207px; height:165px;}
+#map li{ font-size:13px;}
+#map a{ float:right;}
+
+.center{ text-align:center;}
+.center ul{ display:inline-block;}
+.center li{float:left;color:#666; font-size:11px; padding-left:10px; padding-right:8px; background:url(img/footer_ico.png) no-repeat 0 2px;}
+.about{ display:inline-block;  margin:23px auto 12px  auto; text-align:center;}
+.about li{ padding-right:12px;}
+.about li a{ color:#666; font-size:11px;}
+#footer .none{ background:none;}
+
+#side1{ width:6px; height:100%; background:#7a6e6e; position:fixed;top:0; right:0;}
+#side1 #side1_1{position:fixed; top:250px; right:0px;}
+#side1 #side1_2{position:fixed; bottom:0; right:0px;}
+#side1 li{ width:35px; height:35px; background:#7a6e6e; margin-bottom:1px; border-radius:2px;}
+
+#nav #province{ width:310px;display:none; position:absolute;top:32px; left:0px; background:#fff; border:1px solid #ddd;}
+#nav #province ul{ float:left;width:300px; margin:0; padding-left:10px;}
+#nav #province li{width:60px; float:left;}
+#nav #province a{ color:#666; float:left;padding-left:8px; padding-right:8px; margin-right:8px;line-height:24px; }
+#nav #province a:hover{ background:#c81623; color:#fff; display:inline-block; padding-left:8px; padding-right:8px; margin-right:8px;height:24px;}
+
+#nav2 .nav2_js_1{ width:1000px; border-right:solid 1px #b61d1d;border-left:solid 1px #b61d1d; border-bottom:solid 1px #b61d1d; position:absolute;top:0px; left:210px; background:#f7f7f7; z-index:100;}
+#nav2 .nav2_js_1 ul{ width:726px;}
+#nav2 .nav2_js_1 h4{}
+#nav2 .nav2_js_1 li{ display:inline-block;}
+#nav2 .nav2_js_1 a{}
+
+#nav2 .nav2_js_1 .fl{ float:left; width:724px;}
+#nav2 .nav2_js_1 .nav2_js_1_head{ }
+#nav2  .nav2_js_1  .nav2_js_1_head .nav2_head1 { margin-left:20px;}
+#nav2 .nav2_js_1 .nav2_js_1_head li{ display:inline-block; height:24px; background:#7c7171; padding-left:7px; padding-right:30px; margin:10px 10px 0 0;}
+#nav2 .nav2_js_1 .nav2_js_1_head a{ color:#fff; font-size:12px;}
+#nav2 .nav2_js_1 a{color:#666;}
+#nav2 .nav2_js_1 a:hover{}
+
+#nav2 .shop{ text-align:right;}
+#nav2 .nav2_js_1  .shop h4{ float:left; width:104px;}
+#nav2 .nav2_js_1  .shop h4 a{  line-height:36px;}
+#nav2  .nav2_js_1 .shop ul{  width:622px; margin-left:104px; text-align:left; border-bottom:1px solid #eee; padding-bottom:10px;}
+#nav2  .nav2_js_1 .shop li{  padding-left:8px; padding-right:8px; line-height:16px; margin:8px 0 0 0;border-left:solid #eee 1px; }
+#nav2  .nav2_js_1 .shop a{ color:#666;  font-size:12px; }
+#nav2  .nav2_js_1 .shop a:hover{ color:#c81623;}
+
+#nav2 .nav2_js_1 .nav2_fr{ float:right; width:276px;}
+#nav2 .nav2_js_1 .nav2_fr ul{ width:168px; float:right; margin-right:20px; margin-top:20px;}
+#nav2 .nav2_js_1 .nav2_fr li{ float:left; margin-left:1px; margin-bottom:1px;}
+#nav2 .nav2_js_1 .nav2_fr .ad4{  width:168px; float:right; margin-right:20px; margin-top:9px; margin-bottom:22px;} 
+
+.lr .left a,.lr .right a{ color:#fff; font-weight:bold; display:block; width:28px; height:62px; }
+.lr .left {left:0px;background:#000;  position:absolute;  filter:alpha(opacity=40); opacity:0.4; text-align:center; display:none; width:28px; height:62px;  line-height:62px;}
+.lr .right{right:0px; background:#000;position:absolute;  filter:alpha(opacity=40); opacity:0.4;  text-align:center; display:none; width:28px; height:62px;  line-height:62px;}
+
+ #banner .left{ width:28px; height:62px;line-height:62px; top:202px;}
+ #banner .right{ width:28px; height:62px; line-height:62px;top:202px;  }
+ #banner ul{ position:absolute; left:300px; bottom:8px; text-align:center;}
+ #banner li{ display:inline-block; width:18px; height:18px; background:#3e3e3e; border-radius:9px; margin-right:4px;}
+ #banner a{ text-decoration:none; color:#fff; font-weight:bold; }
+ #banner .active{ background:#b61b1f;}
+
+ .ad3 .left{  top:57px; ; margin-left:210px;}
+ .ad3 .right{  top:57px;  }
+ 
+.FFM{ position:relative;}
+ .first_F_mid .left, .first_F_mid .right{ top:283px;}
+ #first_F .left a, #first_F .right a{ float:none;}
+ 
+.second_F_mid .left,.second_F_mid .right{ top:211px;}
+</style>
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="nav" class="clear">
+	<div id="send">送至：广东
+		<div id="province">
+			<ul>
+				<li><a href="#">北京</a></li>
+				<li><a href="#">上海</a></li>
+				<li><a href="#">天津</a></li>
+				<li><a href="#">重庆</a></li>
+				<li><a href="#">河北</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">山西</a></li>
+				<li><a href="#">河南</a></li>
+				<li><a href="#">辽宁</a></li>
+				<li><a href="#">吉林</a></li>
+				<li><a href="#">黑龙江</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">内蒙古</a></li>
+				<li><a href="#">江苏</a></li>
+				<li><a href="#">山东</a></li>
+				<li><a href="#">安徽</a></li>
+				<li><a href="#">浙江</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">福建</a></li>
+				<li><a href="#">湖北</a></li>
+				<li><a href="#">湖南</a></li>
+				<li><a href="#">广东</a></li>
+				<li><a href="#">广西</a></li>
+			</ul>
+		</div>
+	</div>
+	<ul id="nav_2">
+		<li class="login"><a href="#">你好，请登录</a></li>
+		<li class="active"><a href="#">免费注册</a></li>
+		<li><a href="#">我的订单</a></li>
+		<li>
+			<a href="#"><span class="js1">我的京东</span></a>
+		</li>
+		<li><a href="#">京东会员</a></li>
+		<li><a href="#">企业采购</a></li>
+		<li><a href="#"><span class="js1">手机京东</span></a></li>
+		<li><span class="js1">关注京东</span></li>
+		<li><span class="js1">客户服务</span></li>
+		<li><span class="js1">网站导航</span></li>
+	</ul>
+</div>
+
+<div id="ad1"><img src="img/ad1.jpg" alt="京东白条" /></div>
+
+<div id="wrapper">
+	<div id="search">
+		<div class="logo"><img src="img/logo1.jpg" alt="JD" /></div>
+		<div class="sear">
+			<form action="">
+			<input class="sear1" type="text" value="移动电源" /><input class="btn" type="submit" value="搜索" />
+			</form>
+			<ul>
+				<li><a href="#"><span class="red">199减100</span></a></li>
+				<li><a href="#">YOGABook</a></li>
+				<li><a href="#">农用物资</a></li>
+				<li><a href="#">乐Pro3</a></li>
+				<li><a href="#">1元拿走</a></li>
+				<li><a href="#">布艺沙发</a></li>
+				<li><a href="#">dell</a></li>
+				<li><a href="#">1元专享</a></li>
+				<li><a href="#">百草味</a></li>
+			</ul>
+			</div>
+		<div class="cart">我的购物车<span id="numb"></span>&nbsp&gt </div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="nav1">
+		<div class="bar">
+			<strong>全部商品分类</strong>
+			<ul><li><a href="#"><span class="pad1">服装城</span></a></li><li><a href="#">美妆馆</a></li><li><a href="#">京东超市</a></li><li><a href="#">生鲜</a></li><li><a href="#">全球购</a></li><li><a href="#">闪购</a></li><li><a href="#">团购</a></li><li><a href="#">拍卖</a></li><li><a href="#">金融</a></li></ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="content1">
+		<div id="nav2">
+			<ul id="nav2_1">
+				<li>家用电器<span class="fr">&gt</span></li>
+				<li>手机、运营商、数码<span class="fr">&gt</span></li>
+				<li>电脑、办公<span class="fr">&gt</span></li>
+				<li>家居、家具、家装、厨具<span class="fr">&gt</span></li>
+				<li>男装、女装、童装、内衣<span class="fr">&gt</span></li>
+				<li>个护化妆、清洁用品、宠物<span class="fr">&gt</span></li>
+				<li>鞋靴、箱包、珠宝、奢侈品<span class="fr">&gt</span></li>
+				<li>运动户外、钟表<span class="fr">&gt</span></li>
+				<li>汽车、汽车用品<span class="fr">&gt</span></li>
+				<li>母婴、玩具乐器<span class="fr">&gt</span></li>
+				<li>食品、酒类、生鲜、特产<span class="fr">&gt</span></li>
+				<li>医药保健<span class="fr">&gt</span></li>
+				<li>图书、音像、电子书<span class="fr">&gt</span></li>
+				<li>彩票、旅行、充值、票务<span class="fr">&gt</span></li>
+				<li>理财、众筹、白条、保险<span class="fr">&gt</span></li>
+			</ul>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">沸腾国庆</a>
+						<li><a href="#">家电城</a>
+						<li><a href="#">品牌日</a>
+						<li><a href="#">智能生活馆</a>
+						<li><a href="#">京东净化馆</a>
+						<li><a href="#">京东帮服务店</a>
+						<li><a href="#">家电众筹馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电视</a></h4>
+						<ul>
+							<li><a href="#">沸腾国庆</a>
+							<li><a href="#">合资品牌</a>
+							<li><a href="#">国产品牌</a>
+							<li><a href="#">互联网品牌</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">空调</a></h4>
+						<ul>
+							<li><a href="#">壁挂式空调</a>
+							<li><a href="#">柜式空调</a>
+							<li><a href="#">中央空调</a>
+							<li><a href="#">空调配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">洗衣机</a></h4>
+						<ul>
+							<li><a href="#">滚筒洗衣机</a>
+							<li><a href="#">洗烘一体机</a>
+							<li><a href="#">波轮洗衣机</a>
+							<li><a href="#">迷你洗衣机</a>
+							<li><a href="#">洗衣机配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">冰箱</a></h4>
+						<ul>
+							<li><a href="#">多门</a>
+							<li><a href="#">对开门</a>
+							<li><a href="#">三门</a>
+							<li><a href="#">双门</a>
+							<li><a href="#">冰柜/冰吧</a>
+							<li><a href="#">酒柜</a>
+							<li><a href="#">冰箱配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">厨卫大电</a></h4>
+						<ul>
+							<li><a href="#">油烟机</a>
+							<li><a href="#">燃气灶</a>
+							<li><a href="#">烟灶套装</a>
+							<li><a href="#">消毒柜</a>
+							<li><a href="#">洗碗机</a>
+							<li><a href="#">电热水器</a>
+							<li><a href="#">燃气热水器</a>
+							<li><a href="#">嵌入式厨电</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">厨房小电</a></h4>
+						<ul>
+							<li><a href="#">沸腾小电</a>
+							<li><a href="#">电饭煲</a>
+							<li><a href="#">微波炉</a>
+							<li><a href="#">电烤箱</a>
+							<li><a href="#">电磁炉</a>
+							<li><a href="#">电压力锅</a>
+							<li><a href="#">豆浆机</a>
+							<li><a href="#">咖啡机</a>
+							<li><a href="#">面包机</a>
+							<li><a href="#">榨汁机</a>
+							<li><a href="#">料理机</a>
+							<li><a href="#">电饼铛</a>
+							<li><a href="#">养生壶/煎药壶</a>
+							<li><a href="#">酸奶机</a>
+							<li><a href="#">煮蛋器</a>
+							<li><a href="#">电水壶/热水瓶</a>
+							<li><a href="#">电炖锅</a>
+							<li><a href="#">多用途锅</a>
+							<li><a href="#">电烧烤炉</a>
+							<li><a href="#">电热饭盒</a>
+							<li><a href="#">其他厨房电器</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活电器</a></h4>
+						<ul>
+							<li><a href="#">取暖电器</a>
+							<li><a href="#">吸尘器</a>
+							<li><a href="#">净化器</a>
+							<li><a href="#">扫地机器人</a>
+							<li><a href="#">加湿器</a>
+							<li><a href="#">挂烫机/熨斗</a>
+							<li><a href="#">电风扇</a>
+							<li><a href="#">冷风扇</a>
+							<li><a href="#">插座</a>
+							<li><a href="#">电话机</a>
+							<li><a href="#">净水器</a>
+							<li><a href="#">饮水机</a>
+							<li><a href="#">除湿机</a>
+							<li><a href="#">干衣机</a>
+							<li><a href="#">清洁机</a>
+							<li><a href="#">收录/音机</a>
+							<li><a href="#">其他生活电器</a>
+							<li><a href="#">生活电器配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">个护健康</a></h4>
+						<ul>
+							<li><a href="#">剃须刀</a>
+							<li><a href="#">口腔护理</a>
+							<li><a href="#">电吹风</a>
+							<li><a href="#">美容器</a>
+							<li><a href="#">卷/直发器</a>
+							<li><a href="#">理发器</a>
+							<li><a href="#">剃/脱毛器</a>
+							<li><a href="#">浴足盆</a>
+							<li><a href="#">健康秤/厨房秤</a>
+							<li><a href="#">按摩器</a>
+							<li><a href="#">按摩椅</a>
+							<li><a href="#">计步器/脂肪检测器</a>
+							<li><a href="#">其他健康电器</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家庭影音</a></h4>
+						<ul>
+							<li><a href="#">家庭影院</a>
+							<li><a href="#">迷你音响</a>
+							<li><a href="#">DVD</a>
+							<li><a href="#">电视影音配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">进口电器</a></h4>
+						<ul>
+							<li><a href="#">进口电器</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">手机频道</a>
+						<li><a href="#">网上营业厅</a>
+						<li><a href="#">配件城</a>
+						<li><a href="#">影像Club</a>
+						<li><a href="#">以旧换新</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">手机通讯</a></h4>
+						<ul>
+							<li><a href="#">手机</a>
+							<li><a href="#">对讲机</a>
+							<li><a href="#">以旧换新</a>
+							<li><a href="#">手机维修</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">运营商</a></h4>
+						<ul>
+							<li><a href="#">充话费/流量</a>
+							<li><a href="#">170选号</a>
+							<li><a href="#">合约机</a>
+							<li><a href="#">办套餐</a>
+							<li><a href="#">选号码</a>
+							<li><a href="#">固话宽带</a>
+							<li><a href="#">京东通信</a>
+							<li><a href="#">中国移动</a>
+							<li><a href="#">中国联通</a>
+							<li><a href="#">中国电信</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">手机配件</a></h4>
+						<ul>
+							<li><a href="#">手机壳</a>
+							<li><a href="#">贴膜</a>
+							<li><a href="#">手机存储卡</a>
+							<li><a href="#">数据线</a>
+							<li><a href="#">充电器</a>
+							<li><a href="#">手机耳机</a>
+							<li><a href="#">创意配件</a>
+							<li><a href="#">手机饰品</a>
+							<li><a href="#">手机电池</a>
+							<li><a href="#">苹果周边</a>
+							<li><a href="#">移动电源</a>
+							<li><a href="#">蓝牙耳机</a>
+							<li><a href="#">手机支架</a>
+							<li><a href="#">车载配件</a>
+							<li><a href="#">拍照配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">摄影摄像</a></h4>
+						<ul>
+							<li><a href="#">数码相机</a>
+							<li><a href="#">单点/微单相机</a>
+							<li><a href="#">单反相机</a>
+							<li><a href="#">拍立得</a>
+							<li><a href="#">运动相机</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">镜头</a>
+							<li><a href="#">户外器材</a>
+							<li><a href="#">影棚器材</a>
+							<li><a href="#">冲印服务</a>
+							<li><a href="#">数码相框</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">数码配件</a></h4>
+						<ul>
+							<li><a href="#">存储卡</a>
+							<li><a href="#">三脚架/云台</a>
+							<li><a href="#">相机包</a>
+							<li><a href="#">滤镜</a>
+							<li><a href="#">闪光灯/手柄</a>
+							<li><a href="#">相机清洁/贴膜</a>
+							<li><a href="#">机身附件</a>
+							<li><a href="#">镜头附件</a>
+							<li><a href="#">读卡器</a>
+							<li><a href="#">支架</a>
+							<li><a href="#">电池/充电器</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">影音娱乐</a></h4>
+						<ul>
+							<li><a href="#">耳机/耳麦</a>
+							<li><a href="#">音箱/音响</a>
+							<li><a href="#">便携/无线音箱</a>
+							<li><a href="#">收音机</a>
+							<li><a href="#">麦克风</a>
+							<li><a href="#">MP3/MP4</a>
+							<li><a href="#">专业音频</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">智能设备</a></h4>
+						<ul>
+							<li><a href="#">智能手环</a>
+							<li><a href="#">智能手表</a>
+							<li><a href="#">智能眼镜</a>
+							<li><a href="#">智能机器人</a>
+							<li><a href="#">运动跟踪器</a>
+							<li><a href="#">健康监测</a>
+							<li><a href="#">智能配饰</a>
+							<li><a href="#">智能家居</a>
+							<li><a href="#">体感车</a>
+							<li><a href="#">无人机</a>
+							<li><a href="#">其他配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电子教育</a></h4>
+						<ul>
+							<li><a href="#">学生平板</a>
+							<li><a href="#">点读机/笔</a>
+							<li><a href="#">早教益智</a>
+							<li><a href="#">录音笔</a>
+							<li><a href="#">电纸书</a>
+							<li><a href="#">电子词典</a>
+							<li><a href="#">复读机</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<!-------------------------------------------------------------------重复------------------------------------->
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1"  style="display:none" >
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">家装节</a>
+						<li><a href="#">家装城</a>
+						<li><a href="#">居家日用</a>
+						<li><a href="#">精品家具</a>
+						<li><a href="#">家装建材</a>
+						<li><a href="#">厨房达人</a>
+						<li><a href="#">装修服务</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">厨具</a></h4>
+						<ul>
+							<li><a href="#">烹饪锅具</a>
+							<li><a href="#">刀剪菜板</a>
+							<li><a href="#">厨房配件</a>
+							<li><a href="#">水具酒具</a>
+							<li><a href="#">餐具</a>
+							<li><a href="#">茶具/咖啡具</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装建材</a></h4>
+						<ul>
+							<li><a href="#">家装建材</a>
+							<li><a href="#">灯饰照明</a>
+							<li><a href="#">厨房卫浴</a>
+							<li><a href="#">五金工具</a>
+							<li><a href="#">电工电料</a>
+							<li><a href="#">墙地面材料</a>
+							<li><a href="#">装饰材料</a>
+							<li><a href="#">装修服务</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">淋浴花洒</a>
+							<li><a href="#">开关插座</a>
+							<li><a href="#">油漆涂料</a>
+							<li><a href="#">龙头</a>
+							<li><a href="#">智能马桶盖</a>
+							<li><a href="#">监控安防</a>
+							<li><a href="#">门铃</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家纺</a></h4>
+						<ul>
+							<li><a href="#">床品套件</a>
+							<li><a href="#">被子</a>
+							<li><a href="#">枕芯</a>
+							<li><a href="#">蚊帐</a>
+							<li><a href="#">凉席</a>
+							<li><a href="#">毛巾浴巾</a>
+							<li><a href="#">床单被罩</a>
+							<li><a href="#">床垫/床褥</a>
+							<li><a href="#">毯子</a>
+							<li><a href="#">抱枕靠垫</a>
+							<li><a href="#">窗帘/窗纱</a>
+							<li><a href="#">电热毯</a>
+							<li><a href="#">布艺软饰</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家具</a></h4>
+						<ul>
+							<li><a href="#">卧室家具</a>
+							<li><a href="#">客厅家具</a>
+							<li><a href="#">书房家具</a>
+							<li><a href="#">儿童家具</a>
+							<li><a href="#">储物家具</a>
+							<li><a href="#">阳台/户外</a>
+							<li><a href="#">商业办公</a>
+							<li><a href="#">床</a>
+							<li><a href="#">床垫</a>
+							<li><a href="#">沙发</a>
+							<li><a href="#">电脑椅</a>
+							<li><a href="#">衣柜</a>
+							<li><a href="#">茶几</a>
+							<li><a href="#">电视柜</a>
+							<li><a href="#">餐桌</a>
+							<li><a href="#">电脑桌</a>
+							<li><a href="#">鞋架/衣帽架</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">灯具</a></h4>
+						<ul>
+							<li><a href="#">台灯</a>
+							<li><a href="#">吸顶灯</a>
+							<li><a href="#">筒灯射灯</a>
+							<li><a href="#">LED灯</a>
+							<li><a href="#">节能灯</a>
+							<li><a href="#">落地灯</a>
+							<li><a href="#">五金电器</a>
+							<li><a href="#">应急灯/手电</a>
+							<li><a href="#">装饰灯</a>
+							<li><a href="#">吊灯</a>
+							<li><a href="#">氛围照明</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">生活用品</a></h4>
+						<ul>
+							<li><a href="#">收纳用品</a>
+							<li><a href="#">雨伞雨具</a>
+							<li><a href="#">净化除味</a>
+							<li><a href="#">浴室用品</a>
+							<li><a href="#">洗晒/熨烫</a>
+							<li><a href="#">缝纫/针织用品</a>
+							<li><a href="#">清洁工具</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">家装软饰</a></h4>
+						<ul>
+							<li><a href="#">家居软饰</a>
+							<li><a href="#">桌布/罩件</a>
+							<li><a href="#">地毯地垫</a>
+							<li><a href="#">沙发垫套/椅垫</a>
+							<li><a href="#">装饰字画</a>
+							<li><a href="#">装饰摆件</a>
+							<li><a href="#">手工/十字绣</a>
+							<li><a href="#">相框/照片墙</a>
+							<li><a href="#">墙贴/装饰贴</a>
+							<li><a href="#">花瓶花艺</a>
+							<li><a href="#">香薰蜡烛</a>
+							<li><a href="#">节庆饰品</a>
+							<li><a href="#">钟饰</a>
+							<li><a href="#">帘艺隔断</a>
+							<li><a href="#">创意家居</a>
+							<li><a href="#">保暖防护</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="claear"></div>
+				</div>
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav2_js_1" style="display:none">
+				<div class="fl">
+					<ul class="nav2_js_1_head">
+						<li class="nav2_head1"><a href="#">玩3C</a>
+						<li><a href="#">本周热卖</a>
+						<li><a href="#">游戏部落</a>
+						<li><a href="#">GAME+</a>
+						<li><a href="#">装机大师</a>
+						<li><a href="#">办公生活馆</a></li>
+					</ul>
+					<div class="shop">
+						<h4><a href="#">电脑整机</a></h4>
+						<ul>
+							<li><a href="#">笔记本</a>
+							<li><a href="#">游戏本</a>
+							<li><a href="#">平板电脑</a>
+							<li><a href="#">平板电脑配件</a>
+							<li><a href="#">台式机</a>
+							<li><a href="#">一体机</a>
+							<li><a href="#">服务器/工作站</a>
+							<li><a href="#">笔记本配件</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">电脑配件</a></h4>
+						<ul>
+							<li><a href="#">显示器</a>
+							<li><a href="#">CPU</a>
+							<li><a href="#">主板</a>
+							<li><a href="#">硬盘</a>
+							<li><a href="#">内存</a>
+							<li><a href="#">机箱</a>
+							<li><a href="#">电源</a>
+							<li><a href="#">散热器</a>
+							<li><a href="#">刻录机/光驱</a>
+							<li><a href="#">声卡/扩展卡</a>
+							<li><a href="#">装机配件</a>
+							<li><a href="#">显卡</a>
+							<li><a href="#">SSD固态硬盘</a>
+							<li><a href="#">组装电脑</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">外设产品</a></h4>
+						<ul>
+							<li><a href="#">鼠标</a>
+							<li><a href="#">键盘</a>
+							<li><a href="#">键鼠套装</a>
+							<li><a href="#">网络仪表仪器</a>
+							<li><a href="#">U盘</a>
+							<li><a href="#">移动硬盘</a>
+							<li><a href="#">鼠标垫</a>
+							<li><a href="#">摄像头</a>
+							<li><a href="#">线缆</a>
+							<li><a href="#">手写板</a>
+							<li><a href="#">硬盘盒</a>
+							<li><a href="#">电脑工具</a>
+							<li><a href="#">电脑清洁</a>
+							<li><a href="#">UPS电源</a>
+							<li><a href="#">插座</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">游戏设备</a></h4>
+						<ul>
+							<li><a href="#">游戏机</a>
+							<li><a href="#">游戏耳机</a>
+							<li><a href="#">手柄/方向盘</a>
+							<li><a href="#">游戏软件</a>
+							<li><a href="#">游戏周边</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">网络产品</a></h4>
+						<ul>
+							<li><a href="#">路由器</a>
+							<li><a href="#">网络机顶盒</a>
+							<li><a href="#">交换机</a>
+							<li><a href="#">网络存储</a>
+							<li><a href="#">网卡</a>
+							<li><a href="#">4G/3G上网</a>
+							<li><a href="#">网络配件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">办公设备</a></h4>
+						<ul>
+							<li><a href="#">投影机</a>
+							<li><a href="#">摄影配件</a>
+							<li><a href="#">多功能一体机</a>
+							<li><a href="#">打印机</a>
+							<li><a href="#">传真设备</a>
+							<li><a href="#">验钞/点钞机</a>
+							<li><a href="#">扫描设备</a>
+							<li><a href="#">复合机</a>
+							<li><a href="#">碎纸机</a>
+							<li><a href="#">考勤机</a>
+							<li><a href="#">收款/POS机</a>
+							<li><a href="#">会议音频视频</a>
+							<li><a href="#">保险柜</a>
+							<li><a href="#">装订/封装机</a>
+							<li><a href="#">安防监控</a>
+							<li><a href="#">办公家具</a>
+							<li><a href="#">白板</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">文具耗材</a></h4>
+						<ul>
+							<li><a href="#">硒鼓/墨粉</a>
+							<li><a href="#">墨盒</a>
+							<li><a href="#">色带</a>
+							<li><a href="#">纸类</a>
+							<li><a href="#">办公文具</a>
+							<li><a href="#">学生文具</a>
+							<li><a href="#">文件管理</a>
+							<li><a href="#">本册/便签</a>
+							<li><a href="#">计算器</a>
+							<li><a href="#">笔类</a>
+							<li><a href="#">画具画材</a>
+							<li><a href="#">财会用品</a>
+							<li><a href="#">刻录碟片/附件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="shop">
+						<h4><a href="#">服务产品</a></h4>
+						<ul>
+							<li><a href="#">延保服务</a>
+							<li><a href="#">上门安装</a>
+							<li><a href="#">维修保养</a>
+							<li><a href="#">电脑软件</a></li>
+						</ul><div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					</div>
+					
+				<div class="nav2_fr">
+					<ul>
+						<li><a href="#"><img src="img/562f4971Na5379aba.jpg" alt="media" /></a></li>
+						<li><a href="#"><img src="img/57d681e0N86d8a223.jpg" alt="LE" /></a></li>
+						<li><a href="#"><img src="img/573c0ed1Nee530fec.jpg" alt="siemens" /></a></li>
+						<li><a href="#"><img src="img/574c0755Nc8f19944.jpg" alt="gree" /></a></li>
+						<li><a href="#"><img src="img/57a075b6Nd3e293c2.jpg" alt="joyoung" /></a></li>
+						<li><a href="#"><img src="img/54d9ef34N7cc61f4c.jpg" alt="philips" /></a></li>
+						<li><a href="#"><img src="img/57c7e3daN37ccba3b.jpg" alt="robam" /></a></li>
+						<li><a href="#"><img src="img/57d6820aN3ebcb677.jpg" alt="hisense" /></a></li>
+					</ul>
+					<div class="ad4">
+						<a href="#"><img src="img/57d8bbdbN90c563ec.jpg" alt="" /></a>
+						<a href="#"><img src="img/57f270a7Nda218989.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			
+			
+			
+			
+			<!-------------------------------------------------------------------重复------------------------------------->
+			
+			
+		</div>
+		<div id="wrap1" >
+			<div id="banner" class="lr">
+				<img src="img/57e49ea9Nf5f81254.jpg" alt="国庆大赏" />
+				<div class="left"><a href="javascript:;">< </a></div>
+				<div class="right"><a href="javascript:;">> </a></div>
+				<ul>
+					<li class="active"><a href="javascript:;">1</a>
+					<li><a href="javascript:;">2</a>
+					<li><a href="javascript:;">3</a>
+					<li><a href="javascript:;">4</a>
+					<li><a href="javascript:;">5</a>
+					<li><a href="javascript:;">6</a></li>
+				</ul>
+			</div>
+			<div id="side">
+				<div id="news">
+					<div id="news_head"><h2>京东快报</h2><span class="more">更多&nbsp&gt</span></div>
+					<ul>
+						<li><a href="#"><strong>[特惠]</strong>暴风VR电视&nbsp买多少送多少</a></li>
+						<li><a href="#"><strong>[公告]</strong>因广州图书仓搬仓升级配送延迟</a></li>
+						<li><a href="#"><strong>[特惠]</strong>【家电大促】&nbsp抢百万无门槛红包</a></li>
+						<li><a href="#"><strong>[公告]</strong>"放心肉"就在京东生鲜</a></li>
+						<li><a href="#"><strong>[特惠]</strong>每日享折扣&nbsp京东品质游</a></li>
+					</ul>
+				</div>
+				<div id="option1">
+					<ul>
+						<li class="phone"><a>话费</a></li>
+						<li class="plane"><a>机票</a></li>
+						<li class="movie"><a>电影票</a></li>
+						<li class="game"><a>游戏</a></li>
+					</ul>
+					<ul>
+						<li class="lucky"><a>彩票</a></li>
+						<li class="oil"><a>加油卡</a></li>
+						<li class="hotel"><a>酒店</a><img src="img/option1_ico.png" alt="ico"/></li>
+						<li class="train"><a>火车票</a></li>
+					</ul>
+					<ul>
+						<li class="money"><a>众筹</a></li>
+						<li class="fina"><a>理财</a></li>
+						<li class="gif"><a>礼品卡</a></li>
+						<li class="borrow"><a>白条</a></li>
+					</ul>
+				</div>
+				<div class="ad2"><a href="#"><img src="img/57e9daddN2befc25e.jpg" alt="广告" /></a></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+		<div class="ad3 lr">
+			<img class="fl" src="img/ad3.jpg" alt="金秋风暴" /><a href="#"><img src="img/ad3/57e71465Nba5d6ac2.jpg" alt="放假嗨购" /></a><a href="#"><img src="img/ad3/57e4fd34N811205ee.jpg" alt="超值大牌" /></a><a href="#"><img src="img/ad3/57e8882fN32a7d607.jpg" alt="耐克专场" /></a><a href="#"><img src="img/ad3/57e3807cN9b15aa82.jpg" alt="i7新品" />	</a>
+			<div class="left"><a href="javascript:;">< </a></div>
+			<div class="right"><a href="javascript:;">> </a></div>
+		</div>
+	
+		<div class="like">
+			<div class="cont_head">
+				<h3>猜你喜欢</h3>
+				<a href="#"><h4>换一批</h4></a>
+				<div class="clear"></div>
+			</div>
+			<ul>
+				<li class="none"><a href="#"><img src="img/57be762fN033d2ec3.jpg" alt="苹果耳机" /><p>苹果原装耳机 线控麦克风耳塞EarPods</p><strong class="price">￥96.00</strong></a></li>
+				<li><a href="#"><img src="img/57c530ecNe086e5da.jpg" alt="咖啡" /><p>意大利原装进口lavazza拉瓦萨咖啡豆 意式浓缩</p><strong class="price">￥138.00</strong></a></li>
+				<li><a href="#"><img src="img/57e49fabNbe3fa035.jpg" alt="咖啡" /><p>意大利LAVAZZA乐维萨/拉瓦萨特浓意式浓咖啡</p><strong class="price">￥158.00</strong></a></li>
+				<li><a href="#"><img src="img/rBEQYVGJ3G4IAAAAAAFtfQZLF1UAAAnMwBeFoAAAW2V391.jpg" alt="咖啡" /><p>原装进口 Lavazza乐维萨 经典奶香(浓醇)咖啡</p><strong class="price">￥51.8</strong></a></li>
+				<li><a href="#"><img src="img/5661565dN9fee26ef.jpg" alt="咖啡" /><p>原装进口 意大利Lavazza乐维萨/拉瓦萨 俱乐部咖啡</p><strong class="price">￥65.80</strong></a></li>
+				<li><a href="#"><img src="img/554c50e9Nc0ba04e7.jpg" alt="牙刷" /><p>博朗(BRAUN)欧乐B D12013清亮型电动牙刷</p><strong class="price">￥139.00</strong></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="live">
+			<h2>京东·品质生活</h2>
+			<div id="shop">
+				<div class="live_3">
+					<h3>新发现</h3>
+					<div class="live_3_top"  id="bg1_top">
+						<h4>Moto Z&哈苏模块</h4>
+						<p>新品上市<br /><span class="red">24期免息</span></p>
+					</div>
+					<div class="live_3_left" id="bg1_left">
+						<h4>领券中心</h4>
+						<p>华硕笔记本券<br /><span class="red">立减300元</span></p>
+					</div>
+					<div class="live_3_right" id="bg1_right">
+						<h4>限时秒杀</h4>
+						<p>好货连连<br /><span class="red">精彩秒不停</span></p>
+					</div>
+				</div>
+				
+				<div class="live_2">
+					<h3>好东西</h3>
+					<div class="live_2_top"  id="bg2_top">
+						<h4>达人推荐</h4>
+						<p>爆品速递<br /><span class="red">小米品牌日</span></p>
+					</div>
+					<div class="live_2_bottom"  id="bg2_bottom">
+						<h4>头条资讯</h4>
+						<p>腕上私语<br /><span class="red">选择适合你的</span></p>
+					</div>
+				</div>
+				
+				<div class="live_3">
+					<h3>品牌街</h3>
+					<div class="live_3_top"  id="bg3_top">
+						<h4>小米</h4>
+						<p>小米手机5<br /><span class="red">低至1799元</span></p>
+					</div>
+					<div class="live_3_left"  id="bg3_left">
+						<h4>国际大牌</h4>
+						<p>国庆出游购装备<br /><span class="red">Columbia满799减60</span></p>
+					</div>
+					<div class="live_3_right"  id="bg3_right">
+						<h4>本周特卖</h4>
+						<p>大牌折扣<br /><span class="red">每周上新</span></p>
+					</div>
+				</div>
+				
+			</div>
+			<div id="logo">
+				<ul class="fl">
+					<li><a href="#"><img src="img/56fe1ec7N0c3302e2.jpg" alt="xiaomi" /></a></li>
+					<li><a href="#"><img src="img/5763ad44Nd29dc824.jpg" alt="nike" /></a></li>
+					<li><a href="#"><img src="img/5786128bN6232ac1b.jpg" alt="huawei" /></a></li>
+					<li><a href="#"><img src="img/57b6ada6N5ac03327.jpg" alt="philips" /></a></li>
+					<li><a href="#"><img src="img/56e8c714N82271963.jpg" alt="nb" /></a></li>
+					<li><a href="#"><img src="img/575d1964Nb291ee77.jpg" alt="lining" /></a></li>
+					<li class="no_border_bottom"><a href="#"><img src="img/56c04bc6Nb1e3b063.jpg" alt="le" /></a></li>
+				</ul>
+				<ul class="fr">
+					<li><a href="#"><img src="img/564d4328N6fb33fc8.png" alt="meizu" /></a></li>
+					<li><a href="#"><img src="img/56397dffN4d94f572.jpg" alt="channel" /></a></li>
+					<li><a href="#"><img src="img/5716e2c4Nc925baf3.jpg" alt="sumsumg" /></a></li>
+					<li><a href="#"><img src="img/56a855a3Ne38ee719.jpg" alt="ZTE" /></a></li>
+					<li><a href="#"><img src="img/575d1934Nb59e3dfd.jpg" alt="anta" /></a></li>
+					<li><a href="#"><img src="img/5631cd12N7548352d.jpg" alt="nubia" /></a></li>
+					<li class="no_border_bottom"><a href="#"><img src="img/56b2f385N8e4eb051.jpg" alt="oppo" /></a></li>
+				</ul>
+			</div>
+			<div id="ad4">
+				<img src="img/57d8d146N53e88ee4.jpg" alt="ad4_1" />
+				<img src="img/57df42e9N2106a4cf.png" alt="ad4_2" />
+				<img src="img/57e0e072N9c6be68b.jpg" alt="ad4_3" />
+			</div>
+		</div>
+		<div class="clear"></div>
+
+
+	<div id="first_F">
+		<div>
+		<h2>服装鞋包</h2>
+			<ul class="first_F_nav">
+				<li class="nav_active">大牌</li>
+				<li>男装</li>
+				<li>女装</li>
+				<li>鞋靴</li>
+				<li>箱包</li>
+				<li>内衣配饰</li>
+				<li>珠宝首饰</li>
+				<li>奢品礼品</li>
+				<li>奢华腕表</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="first_F_wrap">
+			<div class="first_F_left">
+			<img src="img/57ebed84Nbc1b615a.jpg" alt="牛仔" />
+			<a href="#"><img src="img/57ebde68N9984a8eb.jpg" alt="1F_ad" /></a>
+			</div>
+			<div class="first_F_mid">
+				<a href="#"><img src="img/57ebed3aN67a2c54c.jpg" alt="1F_ad" /></a>
+				<div class="FFM lr">
+					<a href="#"><img src="img/1F/57ebde19N7a3240da.jpg" alt="1F_ad" /></a>
+					<div class="left"><a href="javascript:;"><</a></div>
+					<div class="right"><a href="javascript:;">></a></div>
+				</div>
+				<a href="#"><img src="img/57ebeeb7N9ffcb610.jpg" alt="1F_ad" /></a>
+			</div>
+			<div class="first_F_right">
+				<ul>
+					<li><a href="#"><img src="img/57ebed62Ne3a969a6.jpg" alt="1F_ad" /></a></li>
+					<li><a href="#"><img src="img/57e7e648Nd257bf7b.jpg" alt="1F_ad" /></a></li>
+					<li><a href="#"><img src="img/57ebedc9N5d7409d9.jpg" alt="1F_ad" /></a></li>
+					<li><a href="#"><img src="img/57ebee76N831bac06.jpg" alt="1F_ad" /></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/57ebee87N1ab9d33a.jpg" alt="1F_ad" /></a></li>
+					<li><a href="#"><img src="img/57ebee93N1c8da197.jpg" alt="1F_ad" /></a></li>
+					<li><a href="#"><img src="img/57ebded9N342a927f.jpg" alt="1F_ad" /></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<ul class="first_F_ad">
+			<li><a href="#"><img src="img/57d8e032N3adc4e06.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57e878e5Nb6ebc98c.png" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57e878f9N7715f1e0.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57e8790dN37232136.png" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57e87923Ne4803560.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57e87935N9acdae44.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57d8e08dN09b0328a.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/5747b251N818750c2.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/5795b807N8d1ea1cc.jpg" alt="1F_ad" /></a></li>
+			<li><a href="#"><img src="img/57df8420N5c66d23f.jpg" alt="1F_ad" /></a></li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+	
+	<div id="second_F">
+		<div>
+			<h2>个护美妆</h2>
+				<ul class="first_F_nav">
+					<li class="nav_active">热门</li>
+					<li>国际大牌</li>
+					<li>国妆名品</li>
+					<li>个人护理</li>
+					<li>清洁用品</li>
+					<li>纸品湿巾</li>
+					<li>香水彩妆</li>
+					<li>热销面膜</li>
+					<li>男士精品</li>
+				</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="second_F_wrap">
+			<div class="second_F_left">
+				<img src="img/57e87e9cNd8c7e5c4.jpg" alt="2F_ad" />
+				<div>
+					<p></p>
+					<p></p>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="second_F_mid lr">
+				<a href="#"><img src="img/2F/57e24b29N9be2cb5b.jpg" alt="2F_ad" /></a>
+				<a href="#"><img src="img/2F/57d51426N2c03fefa.jpg" alt="2F_ad" /></a>
+				<div class="left"><a href="javascript:;"><</a></div>
+				<div class="right"><a href="javascript:;">></a></div>
+			</div>
+			<div class="second_F_right">
+				<ul>
+					<a href="#"><img src="img/57e9ccdbN2f799fb4.jpg" alt="2F_ad" /></a>
+					<a href="#"><img src="img/57dfaf42Nc63d79f1.jpg" alt="2F_ad" /></a>
+				</ul>
+				<ul>
+					<a href="#"><img src="img/57ea3d91N9d214b85.jpg" alt="2F_ad" /></a>
+					<a href="#"><img src="img/57e89aaaNd0a2dc16.jpg" alt="2F_ad" /></a>
+				</ul>
+				<ul>
+					<a href="#"><img src="img/57c6a627N1cb4736a.jpg" alt="2F_ad" /></a>
+					<a href="#"><img src="img/57e8ee6fN00289a8b.jpg" alt="2F_ad" /></a>
+				</ul>
+			</div>
+		</div>
+		<ul></ul>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+<div id="footer">
+	<ul id="foot1">
+		<li id="duo">品类齐全 轻松购物</li>
+		<li id="kuai">多仓直发 极速配送</li>
+		<li id="hao">正品行货 精致服务</li>
+		<li id="sheng">天天低价 畅选无忧</li>
+		<div class="clear"></div>
+	</ul>
+	<ul id="nav_last">
+		<li id="shopping_guide">
+			<h3>购物指南</h3><br />
+			<ul>
+				<li><a href="#">购物流程</a></li>
+				<li><a href="#">会员介绍</a></li>
+				<li><a href="#">生活旅行/团购</a></li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">大家电</a></li>
+				<li><a href="#">联系客服</a></li>
+			</ul>
+		</li>
+		<li id="sendway">
+			<h3>配送方式</h3><br />
+			<ul>
+				<li><a href="#">上门自提</a></li>
+				<li><a href="#">211限时达</a></li>
+				<li><a href="#">配送服务查询</a></li>
+				<li><a href="#">配送费收取标准</a></li>
+				<li><a href="#">海外配送</a></li>
+			</ul>
+		</li>
+		<li id="payway">
+			<h3>支付方式</h3><br />
+			<ul>
+				<li><a href="#">货到付款</a></li>
+				<li><a href="#">在线支付</a></li>
+				<li><a href="#">分期付款</a></li>
+				<li><a href="#">邮局付款</a></li>
+				<li><a href="#">公司转账</a></li>
+			</ul>
+		</li>
+		<li id="aftershop">
+			<h3>售后服务</h3><br />
+			<ul>
+				<li><a href="#">售后政策</a></li>
+				<li><a href="#">价格保护</a></li>
+				<li><a href="#">退款说明</a></li>
+				<li><a href="#">返修/退换货</a></li>
+				<li><a href="#">取消订单</a></li>
+			</ul>
+		</li>
+		<li id="fuwu">
+			<h3>特色服务</h3><br />
+			<ul>
+				<li><a href="#">夺宝岛</a></li>
+				<li><a href="#">DIY装机</a></li>
+				<li><a href="#">延保服务</a></li>
+				<li><a href="#">京东E卡</a></li>
+				<li><a href="#">京东通信</a></li>
+				<li><a href="#">京东JD+</a></li>
+			</ul>
+		</li>
+		<li id="map">
+			<h3>京东自营覆盖区县</h3><br />
+			<ul>
+				<li>京东已向全国2654个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</li>
+				<li><a href="#">查看详情&gt</a></li>
+			</ul>
+		</li>
+		<div class="clear"></div>
+	</ul>
+	<div class="center">
+	<ul class="about">
+		<li class="none"><a href="#">关于我们</a></li>
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">联系客服</a></li>
+		<li><a href="#">商家入驻</a></li>
+		<li><a href="#">营销中心</a></li>
+		<li><a href="#">手机京东</a></li>
+		<li><a href="#">友情链接</a></li>
+		<li><a href="#">销售联盟</a></li>
+		<li><a href="#">京东社区</a></li>
+		<li><a href="#">风险监测</a></li>
+		<li><a href="#">京东公益</a></li>
+		<li><a href="#">English Site</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<div class="clear"></div>
+	</ul>
+	<ul id="zheng1">
+		<li class="none">京公网安备 11000002000088号</li>
+		<li>京ICP证070359号</li>
+		<li>互联网药品信息服务资格证编号(京)-经营性-2014-0008</li>
+		<li>新出发京零 字第大120007号</li>
+	</ul><br />
+	<ul id="zheng2">
+		<li class="none">互联网出版许可证编号新出网证(京)字150号</li>
+		<li>出版物经营许可证</li>
+		<li>网络文化经营许可证京网文[2014]2184-348号</li>
+		<li>违法和不良信息举报电话:4006561155</li>
+	</ul><br />
+	<ul id="zheng3">
+		<li class="none">Copyright@2004-2016 京东JD.com版权所有</li>
+		<li>消费者维护热线：4006067733</li>
+	</ul><br />
+	<ul id="zheng4">
+		<li class="none">京东旗下网站:京东钱包</li>
+	</ul><br />
+	</div>
+</div>
+
+<div id="side1">
+	<ul id="side1_1">
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+	<ul id="side1_2">
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+</div>
+
+<script>
+var oSend= document.getElementById('send')
+var oProvince = document.getElementById('province')
+oSend.onmouseover = function(){
+	oProvince.style.display = 'block';
+	oSend.style.backgroundColor = '#fff';
+};
+oSend.onmouseout = function(){
+	oProvince.style.display = 'none';
+	oSend.style.backgroundColor = '#f1f1f1';
+};
+
+
+var aJS1 = document.getElementsByClassName('nav2_js_1');
+var oOption = document.getElementById('nav2_1');
+var aOp = oOption.getElementsByTagName('li');
+var oNav2 = document.getElementById('nav2');
+var timer = null;
+
+for(var i=0;i<aOp.length;i++){
+	aOp[i].index = i;
+	aOp[i].onmouseover = function(){
+		clearTimeout(timer);
+		for(var j=0;j<aJS1.length;j++){
+			aJS1[j].style.display = 'none';
+		};
+		aJS1[this.index].style.display = 'block';
+	};
+	
+	aOp[i].onmouseout = function(){
+		timer = setTimeout(function(){
+			for(var j=0;j<aJS1.length;j++){
+				aJS1[j].style.display = 'none';
+			};
+		},100)
+	};
+	
+	aJS1[i].onmouseover = function(){
+		clearTimeout(timer);
+		this.style.display = 'block';
+	};
+	
+	aJS1[i].onmouseout = function(){
+		timer = setTimeout(function(){
+			for(var j=0;j<aJS1.length;j++){
+				aJS1[j].style.display = 'none';
+			};
+		},100)
+	};
+};
+
+
+var aLr = document.getElementsByClassName('lr');
+var aLeft = document.getElementsByClassName('left');
+var aRight = document.getElementsByClassName('right');
+
+for(var i=0;i<aLr.length;i++){
+	aLr[i].index = i;
+	aLr[i].onmouseover = function(){
+		aLeft[this.index].style.display = "block";
+		aRight[this.index].style.display = "block";
+	};
+	
+	aLr[i].onmouseout= function(){
+		aLeft[this.index].style.display = "none";
+		aRight[this.index].style.display = "none";
+	};
+};
+
+var oBanner = document.getElementById('banner');
+var oBanner_img = oBanner.getElementsByTagName('img')[0];
+var oFFM = document.getElementsByClassName('FFM')[0];
+var oFFM_img = oFFM.getElementsByTagName('img')[0];
+var banner_arr = ["img/57e49ea9Nf5f81254.jpg","img/57f89c10Nc543532a.jpg","img/57ec66fbN13214d67.jpg","img/57ee2332Nd21aba3e.jpg","img/57eca305N73fdcfdf.jpg","img/57eb931cN2b958ae7.jpg"]
+var oSFM = document.getElementsByClassName('second_F_mid')[0];
+var oSFM_img1 = oSFM.getElementsByTagName('img')[0];
+var oSFM_img2 = oSFM.getElementsByTagName('img')[0];
+var First_arr = ["img/1F/57ebde19N7a3240da.jpg","img/1F/57fba64bNebfdebb0.jpg","img/1F/57fba66bN29c8be4b.jpg","img/1F/57fba69cN69a6091f.jpg"];
+var Second_arr_1 = ["img/2F/57e24b29N9be2cb5b.jpg","img/2F/57f86420N06804ce0.jpg","img/2F/57fafc39N536626c4.jpg","img/2F/57fc4098N921233e3.jpg"];
+var Second_arr_2 = ["img/2F/57d51426N2c03fefa.jpg","img/2F/57faf019Nbfe73f20.jpg","img/2F/57fb3f18N5d59d039.jpg","img/2F/57fc3fb9N55b05e67.jpg"];
+var Img_arr = [oBanner_img,a,oFFM_img,oSFM_img1,oSFM_img2]
+var Total_arr = [banner_arr,a,First_arr,Second_arr_1,Second_arr_2]
+var a1 = aLeft[0].getElementsByTagName('a')[0];
+var aBanner_li = oBanner.getElementsByTagName('li');
+var banner_num=0;
+var FF_num=0;
+var SF_num=0;
+var Num_arr = [banner_num,a,FF_num,SF_num]
+var a=null;
+
+for(var k=0;k<aLr.length;k++){
+	aLeft[k].index = k
+	aLeft[k].onclick = function(){
+		Num_arr[this.index]--;
+		if(Num_arr[this.index]<0){
+			Num_arr[this.index]=Total_arr[this.index].length-1;
+		}
+		Img_arr[this.index].src = Total_arr[this.index][Num_arr[this.index]];
+		
+	}
+	aRight[k].index = k
+	aRight[k].onclick = function(){
+		Num_arr[this.index]++;
+		if(Num_arr[this.index]>Total_arr[this.index].length-1){
+			Num_arr[this.index]=0
+		}
+		Img_arr[this.index].src = Total_arr[this.index][Num_arr[this.index]];
+		
+	}
+	
+	for(var i=0;i<aBanner_li.length;i++){
+		aBanner_li[i].index = i;
+		aBanner_li[i].onclick = function(){
+			for(var j=0;j<aBanner_li.length;j++){
+				aBanner_li[j].className = '';
+			};
+			this.className = 'active';
+			oBanner_img.src = banner_arr[this.index];
+			banner_num=this.index;
+		};
+	};
+};
+
+</script>
+
+</body>
+</html>
