@@ -265,3 +265,38 @@ oClose.onclick = function(){
 	};
 };
 
+function tagea(data){
+	var oUl = document.getElementById("baiduList");
+	var html = "";
+	if(data.s.length){
+		oUl.style.display = "block"
+		for(var i=0;i<data.s.length;i++){
+			html +="<li><a target='_blank'href='https://www.baidu.com/s?wd="+data.s[i]+"'>"+data.s[i]+"</a></li>"
+		};
+		oUl.innerHTML = html;
+	} else {
+		oUl.style.display = "none";
+	}
+};
+
+var oBaidu = document.getElementById("baidu");
+var oUl = document.getElementById("baiduList");
+
+oBaidu.onkeyup = function(){
+	if( oBaidu.value != ""){
+		var oScript = document.createElement("script");
+		oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ this.value+"&cb=tagea"
+		document.body.appendChild(oScript)
+	}
+};
+
+var oBaiduSearch = document.getElementById("baiduSearch")
+
+oBaiduSearch.onclick = function(){
+	window.open("https://www.baidu.com/s?wd=" + oBaidu.value)
+}
+
+document.onclick = function(){
+	oUl.style.display = "none";
+		
+};

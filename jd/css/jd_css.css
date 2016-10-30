@@ -30,7 +30,7 @@ img{ border:none;}
 #search{}
 #search .logo{ padding:28px 94px 28px 0; float:left; }
 #search .sear{ float:left; margin:24px 0 20px 0;}
-#search .sear1{ width:454px; height:30px; border:2px solid #b61d1d; color:#666; line-height:30px;}
+#search .sear1{ width:454px; height:30px; border:2px solid #b61d1d; color:#666; line-height:30px; position:relative;}
 #search .btn{ width:82px; height:36px; background:#b61d1d; color:#fff; border:none;}
 #search .sear ul{ float:left; margin-top:8px;}
 #search .sear li{ float:left; font-size:12px; padding-right:10px;}
@@ -38,6 +38,11 @@ img{ border:none;}
 #search .sear a{ text-decoration:none; color:#666; }
 #search .cart{ width:94px; height:34px; border:#666 solid 1px; background:#f9f9f9 url(../img/cart_ico1.png) no-repeat 20px 10px;font-size:12px; float:right; margin:24px 66px 40px auto; line-height:34px; padding-left:44px; position:relative;z-index:1;}
 #numb{ position:absolute; top:-4px; width:16px; height:14px; background:url(../img/cart_ico1.png) no-repeat 0 -27px;}
+
+#search #baiduList{ width:454px; border:2px solid #b61d1d; border-top:none; margin:0px; padding:0px; position:absolute; background:#fff; display:none; z-index:200;}
+#search #baiduList li{ display:block; float:none;}
+#search #baiduList a{ line-height:30px;padding:5px; text-decoration:none; color:#000; display:block;}
+#search #baiduList a:hover{ background:#b61d1d; color:#fff;}
 
 
 #nav1{ border-bottom:#b1191a solid 2px;  width:1342px;}
