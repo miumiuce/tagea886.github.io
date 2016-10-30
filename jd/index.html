@@ -52,7 +52,114 @@
 		<li><a href="#"><span class="js1">手机京东</span></a></li>
 		<li><span class="js1">关注京东</span></li>
 		<li><span class="js1">客户服务</span></li>
-		<li><span class="js1">网站导航</span></li>
+		<li>
+			<span class="js1">网站导航</span>
+			<div id="siteMap">
+				<div class="theme">
+					<h4>特色主题</h4>
+					<ul>
+						<li>品牌街</li>
+						<li>京东首发</li>
+						<li>京东会员</li>
+						<li>新奇特</li>
+						<li>奇趣日报</li>
+					</ul>
+					<ul>
+						<li>好物100</li>
+						<li>今日团购</li>
+						<li>秒杀</li>
+						<li>京东试用</li>
+						<li>大牌免息</li>
+					</ul>
+					<ul>
+						<li>京东预售</li>
+						<li>优惠券</li>
+						<li>定期送</li>
+						<li>礼品购</li>
+						<li>北京老字号</li>
+					</ul>
+					<ul>
+						<li>尖er货</li>
+						<li>闪购</li>
+						<li>装机大师</li>
+						<li>智能馆</li>
+						<li>买什么</li>
+					</ul>
+				</div>
+				<div class="channel">
+					<h4>行业频道</h4>
+					<ul>
+						<li>服装城</li>
+						<li>手机</li>
+						<li>数码</li>
+						<li>运动户外</li>
+						<li>农资频道</li>
+					</ul>
+					<ul>
+						<li>家用电器</li>
+						<li>美妆馆</li>
+						<li>母婴</li>
+						<li>整车</li>
+						<li>京东智能</li>
+					</ul>
+					<ul>
+						<li>电脑办公</li>
+						<li>食品</li>
+						<li>家装城</li>
+						<li>图书</li>
+						<li>玩3C</li>
+					</ul>
+				</div>
+				<div class="service">
+					<h4>生活服务</h4>
+					<ul>
+						<li>京东众筹</li>
+						<li>京东小金库</li>
+						<li>旅行</li>
+						<li>机票酒店</li>
+						<li>京东到家</li>
+					</ul>
+					<ul>
+						<li>白条</li>
+						<li>理财</li>
+						<li>彩票</li>
+						<li>电影票</li>
+						<li>京东微联</li>
+					</ul>
+					<ul>
+						<li>京东金融APP</li>
+						<li>话费</li>
+						<li>游戏</li>
+						<li>水电煤</li>
+						<li>京东众测</li>
+					</ul>
+				</div>
+				<div class="moreshop">
+					<h4>更多精选</h4>
+					<ul>
+						<li>京东社区</li>
+						<li>京东E卡</li>
+						<li>京友邦</li>
+						<li>服务市场</li>
+						<li>办公生活馆</li>
+					</ul>
+					<ul>
+						<li>京东通信</li>
+						<li>智能社区</li>
+						<li>卖家入驻</li>
+						<li>乡村招募</li>
+						<li>知识产权维权</li>
+					</ul>
+					<ul>
+						<li>在线读书</li>
+						<li>游戏社区</li>
+						<li>企业采购</li>
+						<li>校园加盟</li>
+						<li>English Site</li>
+					</ul>
+				</div>
+			</div>
+		</li>
 	</ul>
 	<div class="clear"></div>
 </div>
@@ -64,7 +171,7 @@
 		<div class="logo"><img src="img/logo1.jpg" alt="JD" /></div>
 		<div class="sear">
 			<form action="">
-			<input class="sear1" type="text" value="移动电源" /><input class="btn" type="submit" value="搜索" />
+			<input class="sear1" type="text" placeholder="这里用了百度的api" /><input class="btn" type="submit" value="搜索" />
 			</form>
 			<ul>
 				<li><a href="#"><span class="red">199减100</span></a></li>
@@ -2468,19 +2575,39 @@
 					</ul>
 				</div>
 				<div id="option1">
-					<ul>
+					<ul >
 						<li class="phone"><a>话费</a></li>
 						<li class="plane"><a>机票</a></li>
 						<li class="movie"><a>电影票</a></li>
 						<li class="game"><a>游戏</a></li>
 					</ul>
-					<ul>
+					<div class="huafei">
+						<div class="close">×</div>
+						<ul>
+							<li class="optionActive">话费充值</li>
+							<li>流量充值</li>
+							<li>套餐变更</li>
+						</ul>
+						<span>号码</span>
+						<input type="text" placeholder="移动/联通/电信" id="number" /><br />
+						<span>面值</span>
+						<select name="mianzhi">
+							<option value="20">20</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select><br />
+						<input type="button" value="快速充值" id="quick"/>
+					</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<ul class="optionHide">
 						<li class="lucky"><a>彩票</a></li>
 						<li class="oil"><a>加油卡</a></li>
 						<li class="hotel"><a>酒店</a><img src="img/option1_ico.png" alt="ico"/></li>
 						<li class="train"><a>火车票</a></li>
 					</ul>
-					<ul>
+					<ul class="optionHide">
 						<li class="money"><a>众筹</a></li>
 						<li class="fina"><a>理财</a></li>
 						<li class="gif"><a>礼品卡</a></li>
@@ -2882,17 +3009,17 @@
 
 <div id="side1">
 	<ul id="side1_1">
-		<li><a href="#"><img src="img/slide_ico.png" alt="" /></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
+		<li><a href="#"></a><span>京东会员</span></li>
+		<li><a href="#"></a><span>购物车</span></li>
+		<li><a href="#"></a><span>我的关注</span></li>
+		<li><a href="#"></a><span>我的足迹</span></li>
+		<li><a href="#"></a><span>我的消息</span></li>
+		<li><a href="#"></a><span>咨询JIMI</span></li>
 	</ul>
 	<ul id="side1_2">
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li class="side_acitve"><a href="#"><img src="img/slide_ico.png" alt="" />有奖调查</a></li>
+		<li><a href="#"></a><span>顶部</span></li>
+		<li><a href="#"></a><span>反馈</span></li>
+		<li class="side_acitve"><a href="#">有奖调查</a></li>
 	</ul>
 </div>
 
