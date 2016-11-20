@@ -259,6 +259,9 @@ var iTouchX = 0;
 var iDis = 0;
 
 function fnStart(ev){
+	document.ontouchstart=function(){
+		return false;
+	}
 	ev = ev.changedTouches[0];
 	oPicList.style.WebkitTransition = oPicList.style.transition = "";
 	iTouchX = ev.pageX;
