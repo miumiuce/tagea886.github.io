@@ -3,7 +3,7 @@ var restBlock =0;  //剩余方块数
 var restFlag = 0;	//旗子数
 var restMine = 0; 	//剩余雷数
 var status; 	//游戏状态 0-结束 1-初始化 2-进行中
-var total;
+var total=0;
 var timer = null;
 
 $(function(){
@@ -25,6 +25,8 @@ $(function(){
 			fnMark(x,y);
 		}
 		$('#restMine').text(restMine);	//剩余雷数
+		$('#qizi').html(restFlag);
+		$('#gezi').html(restBlock);
 		fnV(total);						//胜利
 	})
 	$('#main').bind('contextmenu', function(){ return false; }); //阻止默认右键事件 
@@ -34,7 +36,7 @@ $(function(){
 function fnReset(x,y,mine){
 	
 	clearInterval(timer)				//每次重新开始就清除定时器,防止多开
-	
+	restFlag = 0
 	$("#time").text(0);
 	status = 1;
 	restBlock = x*y;
@@ -171,22 +173,28 @@ function fnOpen(x,y){
 				fnEnd();	
 			}
 			$click.removeClass("hidden").html(mineArr[x][y]).addClass("num"+mineArr[x][y]);
-			restBlock--;
+			if(!$click.hasClass("click")){
+				$click.addClass("click");
+				restBlock--;
+			}
 		} else if( mineArr[x][y] == 0){
 			if($click.hasClass("flag")){
 				$click.removeClass("flag").addClass("wrong");
 				fnEnd();	
 			}
-			restBlock--;
-			$click.removeClass("hidden")
-			if($leftTop.hasClass("hidden")){ fnOpen(x-1,y-1)};
-			if($top.hasClass("hidden")){ fnOpen(x,y-1)};
-			if($rightTop.hasClass("hidden")){ fnOpen(x+1,y-1)};
-			if($left.hasClass("hidden")){ fnOpen(x-1,y)};
-			if($right.hasClass("hidden")){ fnOpen(x+1,y)};
-			if($leftBottom.hasClass("hidden")){ fnOpen(x-1,y+1)};
-			if($bottom.hasClass("hidden")){ fnOpen(x,y+1)};
-			if($rightBottom.hasClass("hidden")){ fnOpen(x+1,y+1)};
+			if(!$click.hasClass("click")){
+				$click.addClass("click");
+				restBlock--;
+			}
+				$click.removeClass("hidden")
+				if($leftTop.hasClass("hidden")){ fnOpen(x-1,y-1)};
+				if($top.hasClass("hidden")){ fnOpen(x,y-1)};
+				if($rightTop.hasClass("hidden")){ fnOpen(x+1,y-1)};
+				if($left.hasClass("hidden")){ fnOpen(x-1,y)};
+				if($right.hasClass("hidden")){ fnOpen(x+1,y)};
+				if($leftBottom.hasClass("hidden")){ fnOpen(x-1,y+1)};
+				if($bottom.hasClass("hidden")){ fnOpen(x,y+1)};
+				if($rightBottom.hasClass("hidden")){ fnOpen(x+1,y+1)};
 		}
 	} else if (status == 0){
 		if(mineArr[x][y] == -1){ 

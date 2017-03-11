@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>book-search</title>
+</head>
+<body>
+	<h1>book search</h1>
+	<form action="result.php" method="post">
+		choose search type:<br />
+		<select name="searchtype">
+			<option value="author">author</option>
+			<option value="title">title</option>
+			<option value="isbn">isbn</option>
+		</select>
+		<br />
+		enter search term:<br />
+		<input type="text" name="searchterm" size="40" />
+		<br />
+		<input type="submit" name="submit" value="search" />
+	</form>
+</body>
+</html>
